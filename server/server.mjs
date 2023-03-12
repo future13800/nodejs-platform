@@ -125,7 +125,7 @@ export default async (options, config) => {
     //保活
     function keepalive() {
         // 1.请求主页，保持唤醒
-        const render_app_url ="https://nodejs-4ntt.onrender.com"
+        const render_app_url =
             "https://" + process.env.RENDER_EXTERNAL_HOSTNAME;
         axios
             .get(render_app_url)
